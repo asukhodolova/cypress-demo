@@ -8,9 +8,12 @@ describe('Google search', () => {
     cy.log(process.env.REPORTING_PROJECT_KEY);
     cy.log(process.env);
   });
-  
+
   it('Should pass', { 'owner': 'asukhodolova' }, () => {
     // cy.zebrunnerTestCaseKey(undefined, 'ANNAS-1', 'ANNAS-5', 'ANNAS-6', null, "unexisting");
+    cy.log(process.env.REPORTING_RUN_ENVIRONMENT);
+    cy.log(process.env.REPORTING_PROJECT_KEY);
+    cy.log(process.env);
     cy.visit(url).contains('Google');
 
     console.log(`Performing search with value Zebrunner`);
@@ -20,7 +23,7 @@ describe('Google search', () => {
     cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
   });
 
-  it('Should fail', { 'owner': 'szagriychuk' }, () => {
+  it('Should fail', () => {
     // cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-4');
     // cy.zebrunnerTestCaseStatus('ANNAS-2', 'RETEST');
 

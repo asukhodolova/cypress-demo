@@ -1,0 +1,19 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "Cypress Sample Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --headed --spec cypress/integration/*.js",
+    "test:basic": "npx cypress run --headed --spec cypress/integration/basic.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  },
+  "dependencies": {
+    "@zebrunner/javascript-agent-cypress": "^1.0.44-alpha1",
+    "cypress-xpath": "^2.0.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "reporter": "@zebrunner/javascript-agent-cypress",
+    "reporterOptions": {
+        "reportingServerHostname": "https://mycompany.zebrunner.com/",
+        "reportingServerAccessToken": "somesecrettoken",
+        "reportingProjectKey": "ANNAS",
+        "reportingRunDisplayName": "Cypress Demo",
+        "reportingRunEnvironment": "STAGE",
+        "reportingRunBuild": "1.0-alpha",
+        "reportingRunLocale": "en_US",
+        "reportingSlackChannels": "dev",
+        "reportingEmailRecipients": "asukhodolova@solvd.com"
+    }
+}

@@ -4,7 +4,6 @@ describe('Google search', () => {
 
     it('Should pass', {'owner': 'asukhodolova'}, () => {
       // cy.zebrunnerTestCaseKey(undefined, 'ANNAS-1', 'ANNAS-5', 'ANNAS-6', null, "unexisting");
-  
       cy.visit(url).contains('Google');
   
       console.log(`Performing search with value Zebrunner`);
@@ -27,8 +26,10 @@ describe('Google search', () => {
       cy.xpath("//*[@id='search']//a").should('contain.text', "asdalsdjalskdjlaksjdlkajsd");
     });
   
-    it('Empty test', () => {
+    it.only('Empty test', () => {
         // cy.zebrunnerTestCaseKey('ANNAS-3');
+        cy.task('log', 'Env variables:')
+        cy.task('log', process.env)
     });
   });
   

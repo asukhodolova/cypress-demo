@@ -1,8 +1,8 @@
 {
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
-        "reportingServerHostname": "https://mycompany.zebrunner.com/",
-        "reportingServerAccessToken": "somesecrettoken",
+        "reportingServerHostname": "https://solvdinternal.zebrunner.com/",
+        "reportingServerAccessToken": "CAve1wEDfcbfWuhMdtoPHAaDdaMCOyaUUR7ykFRvi7YwipX6Ee",
         "reportingProjectKey": "ANNAS",
         "reportingRunDisplayName": "Cypress Demo",
         "reportingRunEnvironment": "STAGE",

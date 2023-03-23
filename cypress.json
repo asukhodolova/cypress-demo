@@ -16,7 +16,7 @@
             "zebrunner": {
               "pushResults": true,
               "pushInRealTime": true,
-              "testRunId": 20
+              "testRunId": 1
             }
         }
     }

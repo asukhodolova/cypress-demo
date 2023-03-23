@@ -2,10 +2,6 @@ describe('Google search', () => {
   const url = 'https://www.google.com/';
   const searchValue = 'Zebrunner';
 
-  it('Empty test', () => {
-    cy.zebrunnerTestCaseKey('ANNAS-3');
-  });
-
   it('Should pass', { 'owner': 'asukhodolova' }, () => {
     cy.zebrunnerTestCaseKey(undefined, 'ANNAS-1', 'ANNAS-5', 'ANNAS-6', null, "unexisting");
 
@@ -16,6 +12,10 @@ describe('Google search', () => {
 
     console.log(`Verify first search result contains search value`);
     cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
+  });
+
+  it('Empty test', () => {
+    cy.zebrunnerTestCaseKey('ANNAS-3');
   });
 
   it('Should fail', () => {

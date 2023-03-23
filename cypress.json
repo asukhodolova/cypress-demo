@@ -10,13 +10,13 @@
         "reportingEmailRecipients": "asukhodolova@solvd.com",
         "tcm": {
             "testCaseStatus": {
-              "onPass": "",
-              "onFail": ""
+              "onPass": "PASSED",
+              "onFail": "FAILED"
             },
             "zebrunner": {
               "pushResults": true,
               "pushInRealTime": true,
-              "testRunId": 19
+              "testRunId": 20
             }
         }
     }

@@ -3,6 +3,8 @@ describe('Simple', () => {
   const searchValue = 'Zebrunner';
 
   it('should be passed ', () => {
+    cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-4');
+    
     cy.task('log', 'Env variables:')
     cy.task('log', process.env);
 

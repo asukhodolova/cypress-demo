@@ -14,10 +14,6 @@ describe('Google search', () => {
     cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
   });
 
-  it('Empty test', () => {
-    cy.zebrunnerTestCaseKey('ANNAS-3');
-  });
-
   it('Should fail', () => {
     cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-4');
     cy.zebrunnerTestCaseStatus('ANNAS-2', 'RETEST');
@@ -29,6 +25,12 @@ describe('Google search', () => {
 
     console.log(`Verify first search result contains search value`);
     cy.xpath("//*[@id='search']//a").should('contain.text', "asdalsdjalskdjlaksjdlkajsd");
+  });
+
+  it('Empty test', () => {
+    cy.zebrunnerTestCaseKey('ANNAS-3');
+
+    cy.visit(url).contains('Google');
   });
 
 });

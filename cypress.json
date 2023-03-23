@@ -5,19 +5,10 @@
         "reportingServerAccessToken": "someaccesskey",
         "reportingProjectKey": "DEF",
         "reportingRunDisplayName": "Cypress Demo",
+        "reportingRunEnvironment": "DEMO",
+        "reportingRunBuild": "2.41.2.2431-SNAPSHOT",
         "reportingRunLocale": "en_US",
         "reportingSlackChannels": "dev",
-        "reportingEmailRecipients": "asukhodolova@solvd.com",
-        "tcm": {
-            "testCaseStatus": {
-              "onPass": "",
-              "onFail": ""
-            },
-            "zebrunner": {
-              "pushResults": true,
-              "pushInRealTime": true,
-              "testRunId": 19
-            }
-        }
+        "reportingEmailRecipients": "asukhodolova@solvd.com"
     }
 }

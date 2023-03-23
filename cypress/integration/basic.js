@@ -3,17 +3,12 @@ describe('Google search', () => {
   const searchValue = 'Zebrunner';
 
   it('Empty test', () => {
-    // cy.zebrunnerTestCaseKey('ANNAS-3');
-    cy.log(process.env.REPORTING_RUN_ENVIRONMENT);
-    cy.log(process.env.REPORTING_PROJECT_KEY);
-    cy.log(process.env);
+    cy.zebrunnerTestCaseKey('ANNAS-3');
   });
 
   it('Should pass', { 'owner': 'asukhodolova' }, () => {
-    // cy.zebrunnerTestCaseKey(undefined, 'ANNAS-1', 'ANNAS-5', 'ANNAS-6', null, "unexisting");
-    cy.log(process.env.REPORTING_RUN_ENVIRONMENT);
-    cy.log(process.env.REPORTING_PROJECT_KEY);
-    cy.log(process.env);
+    cy.zebrunnerTestCaseKey(undefined, 'ANNAS-1', 'ANNAS-5', 'ANNAS-6', null, "unexisting");
+
     cy.visit(url).contains('Google');
 
     console.log(`Performing search with value Zebrunner`);
@@ -24,8 +19,8 @@ describe('Google search', () => {
   });
 
   it('Should fail', () => {
-    // cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-4');
-    // cy.zebrunnerTestCaseStatus('ANNAS-2', 'RETEST');
+    cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-4');
+    cy.zebrunnerTestCaseStatus('ANNAS-2', 'RETEST');
 
     cy.visit(url).contains('Google');
 

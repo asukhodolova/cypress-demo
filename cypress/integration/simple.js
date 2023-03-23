@@ -4,8 +4,6 @@ describe('Simple', () => {
 
   it('should be passed ', () => {
     cy.task('log', 'Env variables:')
-    cy.task('log', process.env.REPORTING_RUN_ENVIRONMENT);
-    cy.task('log', process.env.REPORTING_PROJECT_KEY);
     cy.task('log', process.env);
 
     cy.visit(url).contains('Google');

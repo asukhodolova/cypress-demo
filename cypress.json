@@ -1,14 +1,23 @@
 {
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
-        "reportingServerHostname": "https://solvdinternal.zebrunner.com/",
-        "reportingServerAccessToken": "CAve1wEDfcbfWuhMdtoPHAaDdaMCOyaUUR7ykFRvi7YwipX6Ee",
-        "reportingProjectKey": "ANNAS",
+        "reportingServerHostname": "https://mycompany.zebrunner.com/",
+        "reportingServerAccessToken": "someaccesskey",
+        "reportingProjectKey": "DEF",
         "reportingRunDisplayName": "Cypress Demo",
-        "reportingRunEnvironment": "STAGE",
-        "reportingRunBuild": "1.0-alpha",
         "reportingRunLocale": "en_US",
         "reportingSlackChannels": "dev",
-        "reportingEmailRecipients": "asukhodolova@solvd.com"
+        "reportingEmailRecipients": "asukhodolova@solvd.com",
+        "tcm": {
+            "testCaseStatus": {
+              "onPass": "",
+              "onFail": ""
+            },
+            "zebrunner": {
+              "pushResults": true,
+              "pushInRealTime": true,
+              "testRunId": 19
+            }
+        }
     }
 }

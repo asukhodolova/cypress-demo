@@ -18,7 +18,7 @@ describe('Simple', () => {
   it('should be passed with tcm', () => {
     cy.task('log', 'Env variables:')
     cy.task('log', process.env);
-    cy.zebrunnerTestCaseKey('ANNAS-1', 'ANNAS-4');
+    cy.zebrunnerTestCaseKey('ANNAS-5', 'ANNAS-7');
 
     cy.visit(url).contains('Google');
 

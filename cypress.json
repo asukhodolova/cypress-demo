@@ -5,14 +5,12 @@
         "reportingServerAccessToken": "someaccesskey",
         "reportingProjectKey": "DEF",
         "reportingRunDisplayName": "Cypress Demo",
+        "reportingRunEnvironment": "DEMO",
+        "reportingRunBuild": "1.1.0",
         "reportingRunLocale": "en_US",
         "reportingSlackChannels": "dev",
         "reportingEmailRecipients": "asukhodolova@solvd.com",
         "tcm": {
-            "testCaseStatus": {
-              "onPass": "PASSED",
-              "onFail": "FAILED"
-            },
             "zebrunner": {
               "pushResults": true,
               "pushInRealTime": true,

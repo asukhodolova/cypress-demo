@@ -4,13 +4,13 @@
   "description": "Cypress Sample Tests",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --headed --spec cypress/integration/*.js",
-    "test:basic": "npx cypress run --headed --spec cypress/integration/basic.js"
+    "test": "npx cypress run --headed --spec cypress/e2e/*/*.cy.js",
+    "test:basic": "npx cypress run --headed --spec cypress/e2e/basic.cy.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^12.9.0"
   },
   "dependencies": {
     "@zebrunner/javascript-agent-cypress": "^1.0.45",

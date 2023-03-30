@@ -18,6 +18,7 @@ describe('Google search', () => {
     cy.zebrunnerTestCaseKey('ANNAS-2', 'ANNAS-6');
     cy.zebrunnerTestCaseStatus('ANNAS-6', 'RETEST');
 
+    cy.screenshot('my-screenshot222');
     cy.visit(url).contains('Google');
 
     console.log(`Performing search with value Zebrunner`);
@@ -27,10 +28,11 @@ describe('Google search', () => {
     cy.xpath("//*[@id='search']//a").should('contain.text', "asdalsdjalskdjlaksjdlkajsd");
   });
 
-  it('Empty test', () => {
-    cy.zebrunnerTestCaseKey('ANNAS-3');
+  it.only('Empty test', () => {
+    //cy.zebrunnerTestCaseKey('ANNAS-3');
 
     cy.visit(url).contains('Google');
+    cy.exec('find / -name ffmpeg').its('stdout').should('contain', 'test');
   });
 
 });

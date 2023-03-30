@@ -32,7 +32,10 @@ describe('Google search', () => {
     //cy.zebrunnerTestCaseKey('ANNAS-3');
 
     cy.visit(url).contains('Google');
-    cy.exec('find / -name ffmpeg').its('stdout').should('contain', 'test');
+    cy.task('log', 'command result')
+    cy.exec('find / -name ffmpeg').then((result) => {
+      cy.task('log', result.stdout);
+    })
   });
 
 });

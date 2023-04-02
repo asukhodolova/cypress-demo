@@ -1,5 +1,5 @@
 const { defineConfig } = require('cypress');
-const zbrPlugin = require('.@zebrunner/javascript-agent-cypress/lib/plugin');
+const zbrPlugin = require('@zebrunner/javascript-agent-cypress/lib/plugin');
 
 module.exports = defineConfig({
   reporter: '@zebrunner/javascript-agent-cypress',

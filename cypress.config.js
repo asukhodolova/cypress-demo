@@ -2,8 +2,6 @@ const { defineConfig } = require('cypress');
 const zbrPlugin = require('@zebrunner/javascript-agent-cypress-dev/lib/plugin');
 
 module.exports = defineConfig({
-  specPattern: "cypress/e2e/nested/*.cy.{js,jsx,ts,tsx}",
-  excludeSpecPattern: "test.cy.js",
   chromeWebSecurity: false,
   reporter: '@zebrunner/javascript-agent-cypress-dev',
   reporterOptions: {
@@ -25,6 +23,8 @@ module.exports = defineConfig({
     },
   },
   e2e: {
+    specPattern: "cypress/e2e/nested/*.cy.{js,jsx,ts,tsx}",
+    excludeSpecPattern: "test.cy.js",
     setupNodeEvents(on, config) {
       zbrPlugin(on, config);
 

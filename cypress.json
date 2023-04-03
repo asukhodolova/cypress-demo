@@ -1,4 +1,6 @@
 {
+    "testFiles": "**.*.*",
+    "ignoreTestFiles": "basic.js",
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
         "reportingServerHostname": "https://mycompany.zebrunner.com/",

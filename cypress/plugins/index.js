@@ -1,4 +1,4 @@
-const zbrPlugin = require('@zebrunner/javascript-agent-cypress/lib/plugin');
+const zbrPlugin = require('@zebrunner/javascript-agent-cypress-dev/lib/plugin');
 
 module.exports = (on, config) => {
 

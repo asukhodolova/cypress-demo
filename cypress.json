@@ -1,9 +1,11 @@
 {
-    "reporter": "@zebrunner/javascript-agent-cypress",
+    "reporter": "@zebrunner/javascript-agent-cypress-dev",
     "reporterOptions": {
         "reportingServerHostname": "https://mycompany.zebrunner.com/",
         "reportingServerAccessToken": "someaccesskey",
         "reportingProjectKey": "DEF",
+        "reportingRunEnvironment": "CYSERVER",
+        "reportingRunBuild": "9 with 10 agent",
         "reportingRunDisplayName": "Cypress Demo",
         "tcm": {
             "zebrunner": {

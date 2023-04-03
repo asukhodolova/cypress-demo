@@ -23,8 +23,7 @@ module.exports = defineConfig({
     },
   },
   e2e: {
-    specPattern: "cypress/e2e/nested/*.cy.{js,jsx,ts,tsx}",
-    excludeSpecPattern: "test.cy.js",
+    specPattern: "cypress/e2e/nested/**.cy.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {
       zbrPlugin(on, config);
 

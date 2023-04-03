@@ -1,8 +1,8 @@
 const { defineConfig } = require('cypress');
-const zbrPlugin = require('@zebrunner/javascript-agent-cypress/lib/plugin');
+const zbrPlugin = require('@zebrunner/javascript-agent-cypress-dev/lib/plugin');
 
 module.exports = defineConfig({
-  reporter: '@zebrunner/javascript-agent-cypress',
+  reporter: '@zebrunner/javascript-agent-cypress-dev',
   reporterOptions: {
     reportingServerHostname: 'https://sanna.zebrunner.dev/',
     reportingServerAccessToken: 'JHq10kuJrPAjeZjvyXSNVTqWx2hpGjO2jVGGDqfhRitTslmn4P',

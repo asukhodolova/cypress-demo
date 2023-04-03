@@ -28,8 +28,8 @@ describe('Google search', () => {
     cy.xpath("//*[@id='search']//a").should('contain.text', "asdalsdjalskdjlaksjdlkajsd");
   });
 
-  it.only('Empty test', () => {
-    //cy.zebrunnerTestCaseKey('ANNAS-3');
+  it('Empty test', () => {
+    cy.zebrunnerTestCaseKey('ANNAS-3');
 
     cy.visit(url).contains('Google');
     cy.task('log', 'command result')

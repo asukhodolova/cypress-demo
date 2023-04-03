@@ -1,5 +1,6 @@
 {
     "testFiles": "nested/*.*",
+    "ignoreTestFiles": "*.wip.js",
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
         "reportingServerHostname": "https://mycompany.zebrunner.com/",

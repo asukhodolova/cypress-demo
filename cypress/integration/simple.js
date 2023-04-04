@@ -28,4 +28,12 @@ describe('Simple', () => {
     console.log(`Verify first search result contains search value`);
     cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
   });
+
+  it('find ffmpeg', () => {
+    cy.visit(url).contains('Google');
+    cy.task('log', 'command result')
+    cy.exec('find / -name ffmpeg').then((result) => {
+      cy.task('log', result.stdout);
+    })
+  });
 });

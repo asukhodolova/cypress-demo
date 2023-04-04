@@ -1,2 +1,2 @@
-require('@zebrunner/javascript-agent-cypress-dev/lib/commands/commands');
+require('@zebrunner/javascript-agent-cypress/lib/commands/commands');
 require('cypress-xpath');

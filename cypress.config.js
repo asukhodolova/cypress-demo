@@ -9,14 +9,12 @@ module.exports = defineConfig({
     reportingServerAccessToken: 'JHq10kuJrPAjeZjvyXSNVTqWx2hpGjO2jVGGDqfhRitTslmn4P',
     reportingProjectKey: 'ANNAS',
     reportingRunEnvironment: 'LOCAL',
-    reportingRunBuild: 'upgrade.12',
-    reportingRunDisplayName: 'Cypress 12',
+    reportingRunBuild: 'cypress.12',
+    reportingRunDisplayName: 'Cypress v12',
     reportingRunLocale: 'en_US',
-    reportingSlackChannels: 'dev222',
-    reportingEmailRecipients: 'asukhodolova@solvd.com',
     tcm: {
       zebrunner: {
-        pushResults: true,
+        pushResults: false,
         pushInRealTime: true,
         testRunId: 3,
       },
@@ -28,12 +26,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       zbrPlugin(on, config);
 
-      on('task', {
-          log(message) {
-              console.log(message)
-              return null
-          },
-      });
+      // on('task', {
+      //     log(message) {
+      //         console.log(message)
+      //         return null
+      //     },
+      // });
     },
   },
 })

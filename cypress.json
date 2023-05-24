@@ -1,15 +1,16 @@
 {
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
-        "reportingServerHostname": "https://mycompany.zebrunner.com/",
-        "reportingServerAccessToken": "someaccesskey",
-        "reportingProjectKey": "DEF",
-        "reportingRunEnvironment": "CYSERVER",
-        "reportingRunBuild": "9 with 10 agent",
-        "reportingRunDisplayName": "Cypress Demo",
+        "reportingServerHostname": "https://sanna.zebrunner.dev/",
+        "reportingServerAccessToken": "JHq10kuJrPAjeZjvyXSNVTqWx2hpGjO2jVGGDqfhRitTslmn4P",
+        "reportingProjectKey": "ANNAS",
+        "reportingRunEnvironment": "LOCAL",
+        "reportingRunBuild": "version.9",
+        "reportingRunDisplayName": "Cypress 9",
+        "reportingRunLocale": "en_US",
         "tcm": {
             "zebrunner": {
-              "pushResults": true,
+              "pushResults": false,
               "pushInRealTime": true,
               "testRunId": 1
             }

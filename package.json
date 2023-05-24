@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --headed --spec cypress/integration/*.js",
-    "test:basic": "npx cypress run --headed --spec cypress/integration/basic.js"
+    "test:basic": "npx cypress run --headed --spec cypress/integration/basic.js",
+    "test:search": "npx cypress run --headed --spec cypress/integration/search.js"
   },
   "author": "",
   "license": "ISC",

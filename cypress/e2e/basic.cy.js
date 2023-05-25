@@ -8,7 +8,7 @@ describe('Google search', () => {
     cy.visit(url).contains('Google');
 
     console.log(`Performing search with value Zebrunner`);
-    cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
+    cy.xpath("//*[@name='q']").click().type(searchValue).type('{enter}');
 
     console.log(`Verify first search result contains search value`);
     cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
@@ -22,7 +22,7 @@ describe('Google search', () => {
     cy.visit(url).contains('Google');
 
     console.log(`Performing search with value Zebrunner`);
-    cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
+    cy.xpath("//*[@name='q']").click().type(searchValue).type('{enter}');
 
     console.log(`Verify first search result contains search value`);
     cy.xpath("//*[@id='search']//a").should('contain.text', "asdalsdjalskdjlaksjdlkajsd");

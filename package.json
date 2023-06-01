@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zebrunner/javascript-agent-cypress": "^1.1.0",
+    "@zebrunner/javascript-agent-cypress": "^1.1.0-dev",
     "cypress": "^12.13.0",
     "cypress-xpath": "^2.0.1"
   }

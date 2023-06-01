@@ -27,12 +27,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       zbrPlugin(on, config);
 
-      // on('task', {
-      //     log(message) {
-      //         console.log(message)
-      //         return null
-      //     },
-      // });
+      on('task', {
+          log(message) {
+              console.log(message)
+              return null
+          },
+      });
     },
   },
 })

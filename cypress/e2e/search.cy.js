@@ -1,4 +1,4 @@
-describe('Google search', () => {
+describe('Google search with 30 sec wait', () => {
     const url = 'https://www.google.com/';
 
     it('should pass with correct results', () => {
